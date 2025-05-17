@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regions in the Philippines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 30%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .box p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .box button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2c3e50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      width: 100%;
+    }
+
+    .box button:hover,
+    .box button:focus {
+      background-color: #2980b9;
+      box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.3);
+      outline: none;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Regions in the Philippines</h1>
+      <p>Capital: Manila City</p>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="box">
+          <p>Luzon</p>
+          <button class="Luzon" onclick="window.location.href='luzon.html'">Enter</button>
+        </div>
+        <div class="box">
+          <p>Visayas</p>
+          <button class="Visayas" onclick="window.location.href='visayas.html'">Enter</button>
+        </div>
+        <div class="box">
+          <p>Mindanao</p>
+          <button class="Mindanao" onclick="window.location.href='mindanao.html'">Enter</button>
+        </div>
+        <div class="box">
+          <p>Take a Quiz</p>
+          <button class="Quiz" onclick="window.location.href='quiz.html'">Enter</button>
+        </div>
+        <div class="box">
+          <p>Record your score</p>
+<button onclick="window.location.href='http://localhost/tutorial';">Enter</button>
+        </div>
+    </main>
+
+    <footer>
+      &copy; 2025 Web Technology Finals | All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
